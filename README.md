@@ -11,7 +11,7 @@ Bài tập 5 - UART
 - STM32F103C8T6
 - LED
 ## Demo
- [Demo](https://youtu.be/lMAGjrso8ow)
+ [Demo](https://youtu.be/0eL9D4CzhTM)
 
 ## Thành viên
 - Nguyễn Đức Nam
