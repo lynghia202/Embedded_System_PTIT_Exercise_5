@@ -72,7 +72,7 @@ void Print_String(char *s)
 
 void USART1_IRQHandler(void)
 {
-    if (USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)
+    if (USART_GetITStatus(USART1, USART_IT_RXNE) == SET)
     {
         char c = (char)USART_ReceiveData(USART1);
         if (c == '\n')
