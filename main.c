@@ -87,9 +87,9 @@ void USART1_IRQHandler(void)
         else
         {
             if(idx < 16){
-							command[idx++] = c;
-							Print_Char(c);
-						}
+				command[idx++] = c;
+				Print_Char(c);
+			}
         }
     }
 }
@@ -100,7 +100,7 @@ int main(void)
     UART_Config();
     GPIO_ResetBits(GPIOA, LED);
     Print_String("Hello World !\r\n");
-		Print_String("Enter ON/OFF to turn ON/OFF LED: \r\n");
+	Print_String("Enter ON/OFF to turn ON/OFF LED: \r\n");
     while (1)
     {
         if (ready)
@@ -122,7 +122,7 @@ int main(void)
             ready = 0;
             idx = 0;
             memset(command, 0, 16);
-						Print_String("Enter ON/OFF to turn ON/OFF LED: \r\n");
+			Print_String("Enter ON/OFF to turn ON/OFF LED: \r\n");
         }
     }
 }
